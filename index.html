@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
-    <input type="number" id="num1" min="1" max="5">
-    <input type="number" id="num2" min="1" max="5">
-    <button id="addNums" onclick="operate(this.id);">Add</button>
-    <button id="subtractNums" onclick="operate(this.id);">Subtract</button>
-    <button id="multiplyNums" onclick="operate(this.id);">Multiply</button>
-    <button id="divideNums" onclick="operate(this.id);">Divide</button>
+    <div class="gridContainer">
+        <input type="number" id="num1" min="1" max="5">
+        <input type="number" id="num2" min="1" max="5">
+        <button id="btnZero">0</button>
+        <button id="btnOne">1</button>
+        <button id="btnTwo">2</button>
+        <button id="btnThree">3</button>
+        <button id="btnFour">4</button>
+        <button id="btnFive">5</button>
+        <button id="btnSix">6</button>
+        <button id="btnSeven">7</button>
+        <button id="btnEight">8</button>
+        <button id="btnNine">9</button>
+        <button id="addNums" onclick="operate(this.id);">+</button>
+        <button id="subtractNums" onclick="operate(this.id);">-</button>
+        <button id="multiplyNums" onclick="operate(this.id);">x</button>
+        <button id="divideNums" onclick="operate(this.id);">/</button>
+        <button id="equalNums" onclick="operate(this.id);">=</button>
+        <button id="clearNums" onclick="operate(this.id);">C</button>
+    </div>
     <script src="javascript.js"></script> 
     
 </body>
