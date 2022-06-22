@@ -8,25 +8,32 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="gridContainer">
-        <input type="number" id="num1" min="1" max="5">
-        <input type="number" id="num2" min="1" max="5">
-        <button id="btnZero">0</button>
-        <button id="btnOne">1</button>
-        <button id="btnTwo">2</button>
-        <button id="btnThree">3</button>
-        <button id="btnFour">4</button>
-        <button id="btnFive">5</button>
-        <button id="btnSix">6</button>
-        <button id="btnSeven">7</button>
-        <button id="btnEight">8</button>
-        <button id="btnNine">9</button>
-        <button id="addNums" onclick="operate(this.id);">+</button>
-        <button id="subtractNums" onclick="operate(this.id);">-</button>
-        <button id="multiplyNums" onclick="operate(this.id);">x</button>
-        <button id="divideNums" onclick="operate(this.id);">/</button>
-        <button id="equalNums" onclick="operate(this.id);">=</button>
-        <button id="clearNums" onclick="operate(this.id);">C</button>
+    <div class="calculatorGrid">
+        <div id="outputDisplay"></div>
+        <div class="topRow">
+            <button id="clearNums" onclick="clearAll();">CLEAR</button>
+            <button>DEL</button>
+        </div>
+        <div class="buttonsGrid">
+            
+            <button id="1" onclick="appendNums(this.id);">1</button>
+            <button id="2" onclick="appendNums(this.id);">2</button>
+            <button id="3" onclick="appendNums(this.id);">3</button>
+            <button id="divideNums" onclick="operate(this.id);">÷</button>
+            <button id="4" onclick="appendNums(this.id);">4</button>
+            <button id="5" onclick="appendNums(this.id);">5</button>
+            <button id="6" onclick="appendNums(this.id);">6</button>
+            <button id="multiplyNums" onclick="operate(this.id);">x</button>
+            <button id="7" onclick="appendNums(this.id);">7</button>
+            <button id="8" onclick="appendNums(this.id);">8</button>
+            <button id="9" onclick="appendNums(this.id);">9</button>
+            <button id="addNums" onclick="operate(this.id);">+</button>
+            <button id="addDecimal" onclick="appendDecimal(this.id);">.</button>
+            <button id="0" onclick="appendNums(this.id);">0</button>
+            <button id="equalNums" onclick="equalSign();">=</button>
+            <button id="subtractNums" onclick="operate(this.id);">-</button>
+
+        </div>
     </div>
     <script src="javascript.js"></script> 
     

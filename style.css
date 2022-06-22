@@ -1,4 +1,31 @@
-.gridContainer {
+.calculatorGrid {
     display: grid;
-    grid-template-columns: 30px 30px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsGrid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    grid-template-columns: repeat(4, 60px);
+}
+
+#outputDisplay {
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    min-height: 30px;
+    width: 232px;
+    padding: 4px;
+    border-style: double;
+    border-color: black;
+}
+
+.topRow {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 120px);
 }
